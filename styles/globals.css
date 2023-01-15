@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base{
+  html{
+    @apply scroll-smooth
+  }
   body{
-    @apply bg-[#11111b] text-[#cdd6f4] tracking-wide
+    @apply bg-[#11111b] text-[#cdd6f4] tracking-wide scroll-smooth
   }
 
   h1, h2, h3, h4, h5, h6{
     @apply font-bold 
   } 
+
   h1{
     @apply text-4xl sm:text-5xl md:text-6xl
   }
@@ -24,6 +31,6 @@
   }
 
   button{
-    @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#f38ba8] to-[#eba0ac] text-[#cdd6f4]
+    @apply shadow-xl shadow-black rounded-xl bg-gradient-to-r from-[#f38ba8] to-[#eba0ac] text-[#181825]
   }
 }
