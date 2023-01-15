@@ -4,6 +4,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
       </Head>
+      <Navbar />
       <Main />
       <About />
       <Skills />
