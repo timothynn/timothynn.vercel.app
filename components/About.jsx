@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import profileImg from "../public/assets/smiling.png";
+import {Element} from 'react-scroll';
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <Element name="about" id="about" className="w-full md:h-screen px-2 pb-2 pt-40 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 px-4">
         <div className="col-span-2">
           <p className="text-xl uppercase tracking-widest text-[#f38ba8]">About</p>
@@ -17,7 +18,7 @@ Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labor
       <Image src={profileImg} width="300" height="300" alt="/" />
     </div>
       </div> 
-    </div>
+    </Element>
   )
 }
 

@@ -6,7 +6,7 @@ import virusImg from "../public/assets/projects/project3.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full px-4 ">
+    <div id="projects" className="w-full px-4 pt-20 ">
       <div className="max-w-[1240px] mx-auto py-16">
         <p className="text-xl tracking-widest uppercase text-[#f38ba8]">
           Projects

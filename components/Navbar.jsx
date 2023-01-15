@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "react-scroll";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
@@ -36,21 +36,21 @@ const Navbar = () => {
         <Image src={navLogo} alt="/" width="80" height="15" />
         <div>
           <ul className="hidden md:flex">
-            <Link href="/#home">
+            <Link to="home" spy={true} smooth={true} offset={50} duration={500} >
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/#about">
+            <Link to="about" spy={true} smooth={true} offset={50} duration={500} >
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/#skills">
+            <Link to="skills" spy={true} smooth={true} offset={50} duration={500} >
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/#projects">
+            <Link to="projects" spy={true} smooth={true} offset={50} duration={500} >
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="/#contact">
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={500} >
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -91,28 +91,28 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/#home">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
+              <Link to="home" containerId="home" spy={true} smooth={true} offset={50} duration={500} >
                   Home
-                </li>
               </Link>
+                </li>
 
-              <Link href="/#about">
+              <Link to="about" spy={true} smooth={true} offset={50} duration={500} >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link to="skills" spy={true} smooth={true} offset={50} duration={500} >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link to="projects" spy={true} smooth={true} offset={50} duration={500} >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
               </Link>
-              <Link href="/#contact">
+              <Link to="contact" spy={true} smooth={true} offset={50} duration={500} >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
                 </li>

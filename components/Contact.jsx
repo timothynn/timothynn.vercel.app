@@ -1,12 +1,15 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import Link from "next/link";
+import {Link} from "react-scroll";
 import { HiChevronDoubleUp } from "react-icons/hi";
+import contactImg from '../public/assets/convo.webp';
+import Image from "next/image";
+
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full lg:h-screen px-4">
+    <div id="contact" className="w-full lg:h-screen px-4 pt-20">
       <div className="max-w-[1240px]  m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#f38ba8]">
           Contact
@@ -16,11 +19,7 @@ const Contact = () => {
           <div className="col-span-3 md:col-span-2 w-full h-full shadow-xl shadow-black rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
-                <img
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg?w=1060&t=st=1673710365~exp=1673710965~hmac=b0dbf7512c8316c21ae8e37481d0a88ad39bf79ffc3e29363fb8a934d5ecf722"
-                  alt="/"
-                />
+                <Image src={contactImg} width="auto" height="auto" alt="/" className="rounded-xl hover:scale-105 ease-in duration-300" />
               </div>
               <div>
                 <h2 className="py-2">Timothy Nduati</h2>
@@ -105,7 +104,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <Link to="home" spy={true} smooth={true} offset={50} duration={500} >
             <div className="rounded-full shadow-lg shadow-black p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiChevronDoubleUp size={30} className="text-[#f38ba8]" />
             </div>

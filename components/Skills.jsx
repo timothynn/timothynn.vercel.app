@@ -5,7 +5,7 @@ import { SiNextdotjs, SiTailwindcss, SiTensorflow } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full md:h-screen lg:h-screen p-2">
+    <div id="skills" className="w-full md:h-screen px-2 pb-2 pt-40 md:pt-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full px-4">
         <p className="text-xl tracking-widest uppercase text-[#f38ba8]">
           Skills
