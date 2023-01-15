@@ -36,21 +36,21 @@ const Navbar = () => {
         <Image src={navLogo} alt="/" width="80" height="15" />
         <div>
           <ul className="hidden md:flex">
-            <Link href="/#home" smooth={true} duration={500}>
+            <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/#about" smooth={true} duration={500}>
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/#skills" smooth={true} duration={500}>
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/#projects" smooth={true} duration={500}>
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="/#contact" smooth={true} duration={500}>
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
