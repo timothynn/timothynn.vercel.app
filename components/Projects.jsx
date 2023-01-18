@@ -16,7 +16,7 @@ const Projects = () => {
           <ProjectItem
             title="Property Finder"
             backgroundImg={propertyImg}
-            projectUrl="/property"
+            projectUrl="https://deepnote.com/@timothynn/Read-Data-From-Twitter-ef7770a0-d8a3-46b8-be22-a80a9a3e96fc"
           />
           <ProjectItem
             title="Crypto app"

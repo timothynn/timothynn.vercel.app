@@ -123,19 +123,25 @@ const Navbar = () => {
                 Lets Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                   <Link href="https://www.linkedin.com/in/timothynn">            
+    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
+    </Link><Link href="https://twitter.com/im4_tim">
                 <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaTwitter />
                 </div>
+    </Link>
+    <Link href="https://github.com/timothynn">
                 <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaGithub />
                 </div>
+
+    </Link>
+    <Link href="mailto:timothynn08@gmail.com">
                 <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail />
-                </div>
-              </div>
+                </div></Link>              </div>
             </div>
           </div>
         </div>

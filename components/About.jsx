@@ -2,6 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import profileImg from "../public/assets/smiling.png";
 import {Element} from 'react-scroll';
+import { SiDeepnote, SiHashnode, SiKaggle } from 'react-icons/si';
+import { AiOutlineDown, AiOutlineDownCircle } from 'react-icons/ai';
+import Link from 'next/link';
+import { FaKaggle } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -11,8 +15,30 @@ const About = () => {
           <p className="text-xl uppercase tracking-widest text-[#f38ba8]">About</p>
     <h2>Who I am</h2>
     <p>
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+    I am currently a 3rd year student pursing computer science. I am interested in <span className="font-bold">Data Science</span>, <span className='font-bold'>Machine Learning</span> and <span className="font-bold">Data Engineering</span>. I began my DS learning path in <span className="font-bold">Kaggle </span> and since then I have been researching and create some cool projects in <span className="font-bold">Kaggle</span> and <span className="font-bold">DeepNote</span>. I&apos;m currently mastering SQL and learning Data Science. I am also trying to write articles on <span className="font-bold" > Hasnode </span>
     </p>
+      
+    <p className="pt-4 font-bold  pb-1 uppercase tracking-wide flex text-[#f38ba8]">
+    Check out me out <AiOutlineDownCircle size={20} className="ml-4 mt-1" /> 
+   </p> 
+    <div className="flex items-center justify-between max-w-[270px] py-4">
+            <Link href="https://www.deepnote.com/@timothynn">
+              <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <SiDeepnote size={25} />
+              </div>
+            </Link>
+            <Link href="https://www.kaggle.com/timothynduati">
+              <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaKaggle size={25} />
+              </div>
+            </Link>
+            <Link href="https://timothynn.hashnode.dev">
+              <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <SiHashnode size={25} />
+              </div>
+            </Link>
+
+          </div>
     </div>
     <div className="w-full pt-8 h-auto m-auto rounded-xl max-w-[300px] shadow-xl shadow-black flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
       <Image src={profileImg} width="300" height="300" alt="/" />
