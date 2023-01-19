@@ -14,7 +14,7 @@ const Projects = () => {
         <h2 className="py-4">What am working on - WIP</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
+            title="Twitter API V2"
             backgroundImg={propertyImg}
             projectUrl="https://deepnote.com/@timothynn/Read-Data-From-Twitter-ef7770a0-d8a3-46b8-be22-a80a9a3e96fc"
           />

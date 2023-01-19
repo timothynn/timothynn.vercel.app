@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPython, FaReact } from "react-icons/fa";
 import { DiMysql, DiScala, DiSpark } from "react-icons/di";
-import { SiNextdotjs, SiTailwindcss, SiTensorflow } from "react-icons/si";
+import { SiMicrosoftazure, SiNextdotjs, SiPlotly, SiPostgresql, SiPytest, SiStreamlit, SiTailwindcss, SiTensorflow } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -90,6 +90,46 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Nextjs</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <SiMicrosoftazure size={50} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Azure</h3>
+              </div>
+            </div>
+          </div>
+           <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <SiStreamlit size={50} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Streamlit</h3>
+              </div>
+            </div>
+          </div>
+           <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <SiPostgresql size={50} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Postgresql</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <SiPlotly size={50} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Plotly</h3>
               </div>
             </div>
           </div>

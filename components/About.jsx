@@ -24,17 +24,17 @@ const About = () => {
     <div className="flex items-center justify-between max-w-[270px] py-4">
             <Link href="https://www.deepnote.com/@timothynn">
               <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <SiDeepnote size={25} />
+                <SiDeepnote />
               </div>
             </Link>
             <Link href="https://www.kaggle.com/timothynduati">
               <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaKaggle size={25} />
+                <FaKaggle />
               </div>
             </Link>
             <Link href="https://timothynn.hashnode.dev">
               <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <SiHashnode size={25} />
+                <SiHashnode />
               </div>
             </Link>
 
