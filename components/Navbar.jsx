@@ -50,12 +50,7 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            <Link to="contact" spy={true} smooth={true} offset={50} duration={500} >
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
-              </li>
-            </Link>
-          </ul>
+                      </ul>
           <div onClick={handleNav} className="md:hidden cursor-pointer">
             <AiOutlineMenu size={25} />
           </div>
@@ -112,12 +107,7 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link to="contact" spy={true} smooth={true} offset={50} duration={500} >
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
-                </li>
-              </Link>
-            </ul>
+                         </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#f38ba8]">
                 Lets Connect
