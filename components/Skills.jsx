@@ -1,7 +1,8 @@
 import React from "react";
 import { FaPython, FaReact } from "react-icons/fa";
 import { DiMysql, DiScala, DiSpark } from "react-icons/di";
-import { SiMicrosoftazure, SiNextdotjs, SiPlotly, SiPostgresql, SiPytest, SiStreamlit, SiTailwindcss, SiTensorflow } from "react-icons/si";
+import { SiMicrosoftazure, SiNextdotjs, SiPlotly, SiPostgresql, SiPytest, SiScikitlearn, SiStreamlit, SiTailwindcss, SiTensorflow } from "react-icons/si";
+import {GrHadoop} from 'react-icons/gr';
 
 const Skills = () => {
   return (
@@ -66,36 +67,6 @@ const Skills = () => {
           <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <FaReact size={50} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>React</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <SiTailwindcss size={50} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <SiNextdotjs size={50} />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>Nextjs</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
                 <SiMicrosoftazure size={50} />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -132,7 +103,28 @@ const Skills = () => {
                 <h3>Plotly</h3>
               </div>
             </div>
+          </div>      
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <SiScikitlearn size={50} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Sklearn</h3>
+              </div>
+            </div>
           </div>
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <GrHadoop size={50} />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Hadoop</h3>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

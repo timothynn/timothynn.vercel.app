@@ -1,8 +1,5 @@
 import React from "react";
 import ProjectItem from "./ProjectsItem";
-import propertyImg from "../public/assets/projects/2852498.jpg";
-import cryptoImg from "../public/assets/projects/7257118.jpg";
-import virusImg from "../public/assets/projects/project3.jpg";
 
 const Projects = () => {
   return (
@@ -11,27 +8,31 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#f38ba8]">
           Projects
         </p>
-        <h2 className="py-4">What am working on - WIP</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="py-4">What I&apos;ve been working on</h2>
+        <div className="">
           <ProjectItem
             title="Twitter API V2"
-            backgroundImg={propertyImg}
             projectUrl="https://deepnote.com/@timothynn/Read-Data-From-Twitter-ef7770a0-d8a3-46b8-be22-a80a9a3e96fc"
+    projectDesc="Project made by python and streamlit"
+    projectSkill="Python, TwitterAPI, DeepNote"
           />
           <ProjectItem
-            title="Crypto app"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
+            title="House Price Prediction"
+            projectUrl="https://github.com/timothynn/HousePricePrediction"
+    projectDesc="Melborne House Price Analysis"
+    projectSkill="Python, Sklearn"
           />
           <ProjectItem
             title="Covid 19"
-            backgroundImg={virusImg}
             projectUrl="/covid"
+    projectDesc="Covid 19 data Analysis"
+    projectSkill="Python, Sklearn"
           />
           <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
+            title="CSV Wrangler"
+            projectUrl="https://timothynn-streamlit-example-streamlit-app-ibdsjz.streamlit.app/"
+    projectDesc="Project made by python and streamlit"
+    projectSkill="Python, Streamlit"
           />
         </div>
       </div>
