@@ -1,1 +1,1 @@
- <a href="https://mathstodon.xyz/@mlliarm" rel="me">Mathstodon</a>
+ <a href="https://mastodon.social/@timothynn" rel="me">Mastodon Social</a>
